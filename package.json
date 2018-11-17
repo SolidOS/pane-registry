@@ -1,5 +1,5 @@
 {
-  "name": "issue-pane",
+  "name": "pane-registry",
   "version": "1.0.2",
   "description": "Solid-compatible Panes: issue editor",
   "main": "./issuePane.js",
