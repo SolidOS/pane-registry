@@ -1,6 +1,6 @@
 {
   "name": "pane-registry",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Solid-compatible Panes: issue editor",
   "main": "./paneRegistry.js",
   "scripts": {
