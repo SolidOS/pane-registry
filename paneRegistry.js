@@ -1,21 +1,19 @@
 /*                            SOLID PANE REGISTRY
-**
-**     Panes are regions of the outline view in which a particular subject is
-** displayed in a particular way.
-** Different paneRegistry about the same subject are typically stacked vertically.
-** Panes may be used naked or with a pane selection header.
-**
-** The label() method has two functions: it determines whether the pane is
-** relevant to a given subject, returning null if not.
-** If it is relevant, then it returns a suitable tooltip for a control which selects the pane
-*/
+ **
+ **     Panes are regions of the outline view in which a particular subject is
+ ** displayed in a particular way.
+ ** Different paneRegistry about the same subject are typically stacked vertically.
+ ** Panes may be used naked or with a pane selection header.
+ **
+ ** The label() method has two functions: it determines whether the pane is
+ ** relevant to a given subject, returning null if not.
+ ** If it is relevant, then it returns a suitable tooltip for a control which selects the pane
+ */
 
 // create the unique UI module on which to attach paneRegistry (no, don't attach as UI dot paneRegistry any more)
 // var UI = require('solid-ui') // Note we will add the paneRegistry register to this.
 
-var paneRegistry = module.exports = {}
-
-// paneRegistry.UI = require('solid-ui') // Pass on directly to any who needs it
+var paneRegistry = (module.exports = {})
 
 paneRegistry.list = []
 paneRegistry.paneForIcon = []
@@ -32,7 +30,8 @@ paneRegistry.register = function (p, requireQueryButton) {
     return
   }
   paneRegistry.list.push(p)
-  if (!(p.name in paneRegistry)) { // don't overwrite methods
+  if (!(p.name in paneRegistry)) {
+    // don't overwrite methods
     paneRegistry[p.name] = p
     // console.log('    Indexing '+ p.name +' pane ...')
   }
@@ -41,7 +40,7 @@ paneRegistry.register = function (p, requireQueryButton) {
   }
   if (p.predicates) {
     for (var x in p.predicates) {
-      paneRegistry.paneForPredicate[x] = {pred: x, code: p.predicates[x]}
+      paneRegistry.paneForPredicate[x] = { pred: x, code: p.predicates[x] }
     }
   }
 }
