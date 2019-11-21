@@ -3,6 +3,7 @@
   "version": "1.0.4",
   "description": "Solid-compatible Panes: Pane Registry",
   "main": "./paneRegistry.js",
+  "types": "./index.d.ts",
   "scripts": {
     "test": "prettier-standard --lint '*'"
   },
@@ -30,7 +31,9 @@
     "url": "https://github.com/solid/chat-pane/issues"
   },
   "homepage": "https://github.com/solid/chat-pane",
-  "dependencies": {},
+  "dependencies": {
+    "@types/rdflib": "^1.0.5"
+  },
   "devDependencies": {
     "husky": "^3.0.8",
     "lint-staged": "^10.0.0-0",
