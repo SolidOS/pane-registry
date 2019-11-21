@@ -1,7 +1,6 @@
 // This is manually built for now
 
 import { NamedNode, IndexedFormula, Fetcher, UpdateManager } from 'rdflib'
-import { DataBrowserContext } from 'solid-panes'
 
 declare const list: Array<PaneDefinition>
 declare const paneForIcon: { [key: string]: PaneDefinition }
