@@ -31,9 +31,10 @@
     "url": "https://github.com/solid/chat-pane/issues"
   },
   "homepage": "https://github.com/solid/chat-pane",
-  "dependencies": {},
+  "dependencies": {
+    "@types/rdflib": "^1.0.5"
+  },
   "devDependencies": {
-    "@types/rdflib": "^1.0.5",
     "husky": "^3.0.8",
     "lint-staged": "^10.0.0-0",
     "prettier-standard": "^15.0.1"
