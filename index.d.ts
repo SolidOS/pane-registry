@@ -21,7 +21,7 @@ declare function byName (name: string): PaneDefinition | null
  */
 export type DataBrowserSession = {
   paneRegistry: PaneRegistry
-  store: InstantiatedStore
+  store: IndexedFormula
 }
 
 /**
@@ -31,16 +31,6 @@ export type DataBrowserContext = {
   dom: HTMLDocument
   getOutliner: (dom: HTMLDocument) => any // @@ TODO Remove the use of getOutliner - only here as an interim until we have better solution
   session: DataBrowserSession
-}
-
-/**
- * This is only a placeholder until we have something proper
- * DO NOT EXTEND ANYTHING WITH THIS
- * @@ TODO Remove this when we have a proper type
- */
-export abstract class InstantiatedStore extends IndexedFormula {
-  public fetcher: Fetcher
-  public updater: UpdateManager
 }
 
 /**
