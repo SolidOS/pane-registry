@@ -29,7 +29,7 @@ export type DataBrowserSession = {
  */
 export type DataBrowserContext = {
   dom: HTMLDocument
-  getOutliner: (dom: HTMLDocument) => any // @@ TODO Remove the use of getOutliner - only here as an interim until we have better solution
+  getOutliner: (dom: HTMLDocument) => unknown // @@ TODO Remove the use of getOutliner - only here as an interim until we have better solution
   session: DataBrowserSession
 }
 
