@@ -2,8 +2,8 @@
   "name": "pane-registry",
   "version": "2.0.0",
   "description": "Solid-compatible Panes: Pane Registry",
-  "main": "paneRegistry.js",
-  "types": "index.d.ts",
+  "main": "./paneRegistry.js",
+  "types": "./index.d.ts",
   "scripts": {
     "lint": "eslint 'paneRegistry.js'",
     "lint-fix": "eslint 'paneRegistry.js' --fix"
