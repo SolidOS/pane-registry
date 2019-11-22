@@ -6,7 +6,8 @@
   "types": "./index.d.ts",
   "scripts": {
     "lint": "eslint 'paneRegistry.js'",
-    "lint-fix": "eslint 'paneRegistry.js' --fix"
+    "lint-fix": "eslint 'paneRegistry.js' --fix",
+    "test": "npm run lint"
   },
   "repository": {
     "type": "git",
