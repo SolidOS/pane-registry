@@ -49,6 +49,7 @@ paneRegistry.byName = function (name) {
   for (var i = 0; i < paneRegistry.list.length; i++) {
     if (paneRegistry.list[i].name === name) return paneRegistry.list[i]
   }
+  console.warn(`No view with name ${name} found in the registry of views (aka paneRegistry)`)
   return null
 }
 
