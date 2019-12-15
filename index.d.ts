@@ -10,18 +10,25 @@ declare const paneForPredicate: {
     code: number
   }
 }
+
 declare function register (
   pane: PaneDefinition,
   requireQueryButton?: boolean
 ): void
+
 declare function byName (name: string): PaneDefinition | null
+
+export class SessionStore extends IndexedFormula {
+  public fetcher: Fetcher
+  public updater: UpdateManager
+}
 
 /**
  * All of the knowledge that a user accumulates throughout the current session
  */
 export type DataBrowserSession = {
   paneRegistry: PaneRegistry
-  store: IndexedFormula
+  store: SessionStore
 }
 
 /**
@@ -67,16 +74,16 @@ export interface PaneDefinition {
 }
 
 interface NewPaneOptions {
-  appPathSegment: string
-  div: HTMLDivElement
+  appPathSegment?: string
+  div: HTMLElement
   dom: HTMLDocument
   folder: NamedNode
   iconEle: HTMLImageElement
   me?: NamedNode
   newBase: string
-  newInstance: NamedNode
+  newInstance?: NamedNode
   noIndexHTML: boolean
   noun: string
   pane: PaneDefinition
-  refreshTarget: HTMLTableElement
+  refreshTarget?: HTMLTableElement
 }

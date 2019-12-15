@@ -13,6 +13,8 @@
 // create the unique UI module on which to attach paneRegistry (no, don't attach as UI dot paneRegistry any more)
 // var UI = require('solid-ui') // Note we will add the paneRegistry register to this.
 
+const $rdf = require('rdflib')
+
 var paneRegistry = (module.exports = {})
 
 paneRegistry.list = []
@@ -51,6 +53,14 @@ paneRegistry.byName = function (name) {
   }
   console.warn(`No view with name ${name} found in the registry of views (aka paneRegistry)`)
   return null
+}
+
+paneRegistry.SessionStore = class SessionStore extends $rdf.IndexedFormula {
+  constructor (features) {
+    super(features)
+    this.fetcher = $rdf.fetcher(this)
+    this.updater = new $rdf.UpdateManager(this)
+  }
 }
 
 // ENDS
