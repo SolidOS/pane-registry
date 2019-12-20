@@ -1,6 +1,6 @@
 // This is manually built for now
 
-import { NamedNode, IndexedFormula, Fetcher, UpdateManager } from 'rdflib'
+import { Fetcher, NamedNode, Store, UpdateManager } from 'rdflib'
 
 declare const list: Array<PaneDefinition>
 declare const paneForIcon: { [key: string]: PaneDefinition }
@@ -18,8 +18,11 @@ declare function register (
 
 declare function byName (name: string): PaneDefinition | null
 
-export class SessionStore extends IndexedFormula {
+export class ConnectedStore extends Store {
   public fetcher: Fetcher
+}
+
+export class LiveStore extends ConnectedStore {
   public updater: UpdateManager
 }
 
@@ -28,7 +31,7 @@ export class SessionStore extends IndexedFormula {
  */
 export type DataBrowserSession = {
   paneRegistry: PaneRegistry
-  store: SessionStore
+  store: LiveStore
 }
 
 /**

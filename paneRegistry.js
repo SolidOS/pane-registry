@@ -15,7 +15,7 @@
 
 const $rdf = require('rdflib')
 
-var paneRegistry = (module.exports = {})
+const paneRegistry = (module.exports = {})
 
 paneRegistry.list = []
 paneRegistry.paneForIcon = []
@@ -55,10 +55,16 @@ paneRegistry.byName = function (name) {
   return null
 }
 
-paneRegistry.SessionStore = class SessionStore extends $rdf.IndexedFormula {
+paneRegistry.ConnectedStore = class ConnectedStore extends $rdf.Store {
   constructor (features) {
     super(features)
-    this.fetcher = $rdf.fetcher(this)
+    this.fetcher = $rdf.fetcher(this, {})
+  }
+}
+
+paneRegistry.LiveStore = class LiveStore extends $rdf.Store {
+  constructor (features) {
+    super(features)
     this.updater = new $rdf.UpdateManager(this)
   }
 }
