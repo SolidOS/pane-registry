@@ -13,7 +13,9 @@
 // create the unique UI module on which to attach paneRegistry (no, don't attach as UI dot paneRegistry any more)
 // var UI = require('solid-ui') // Note we will add the paneRegistry register to this.
 
-var paneRegistry = (module.exports = {})
+const $rdf = require('rdflib')
+
+const paneRegistry = (module.exports = {})
 
 paneRegistry.list = []
 paneRegistry.paneForIcon = []
@@ -51,6 +53,20 @@ paneRegistry.byName = function (name) {
   }
   console.warn(`No view with name ${name} found in the registry of views (aka paneRegistry)`)
   return null
+}
+
+paneRegistry.ConnectedStore = class ConnectedStore extends $rdf.Store {
+  constructor (features) {
+    super(features)
+    this.fetcher = $rdf.fetcher(this, {})
+  }
+}
+
+paneRegistry.LiveStore = class LiveStore extends $rdf.Store {
+  constructor (features) {
+    super(features)
+    this.updater = new $rdf.UpdateManager(this)
+  }
 }
 
 // ENDS
