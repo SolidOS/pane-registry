@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/solid/chat-pane",
   "dependencies": {
-    "rdflib": "^1.0.7-2"
+    "rdflib": "^1.2.0"
   },
   "devDependencies": {
     "eslint": "^6.6.0",
