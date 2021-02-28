@@ -41,14 +41,14 @@ paneRegistry.register = function (p, requireQueryButton) {
     paneRegistry.paneForIcon[p.icon] = p
   }
   if (p.predicates) {
-    for (var x in p.predicates) {
+    for (const x in p.predicates) {
       paneRegistry.paneForPredicate[x] = { pred: x, code: p.predicates[x] }
     }
   }
 }
 
 paneRegistry.byName = function (name) {
-  for (var i = 0; i < paneRegistry.list.length; i++) {
+  for (let i = 0; i < paneRegistry.list.length; i++) {
     if (paneRegistry.list[i].name === name) return paneRegistry.list[i]
   }
   console.warn(`No view with name ${name} found in the registry of views (aka paneRegistry)`)
