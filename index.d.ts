@@ -1,6 +1,7 @@
 // This is manually built for now
 
 import { Fetcher, NamedNode, Store, UpdateManager } from 'rdflib'
+import {SolidLogic} from 'solid-logic';
 
 declare const list: Array<PaneDefinition>
 declare const paneForIcon: { [key: string]: PaneDefinition }
@@ -32,6 +33,7 @@ export class LiveStore extends ConnectedStore {
 export type DataBrowserSession = {
   paneRegistry: PaneRegistry
   store: LiveStore
+  logic: SolidLogic
 }
 
 /**
