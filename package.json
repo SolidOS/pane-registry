@@ -1,6 +1,6 @@
 {
   "name": "pane-registry",
-  "version": "2.4.3",
+  "version": "2.4.4",
   "description": "Solid-compatible Panes: Pane Registry",
   "main": "./paneRegistry.js",
   "types": "./index.d.ts",
