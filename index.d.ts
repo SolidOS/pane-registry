@@ -1,7 +1,7 @@
 // This is manually built for now
 
-import { Fetcher, NamedNode, Store, UpdateManager } from 'rdflib'
-import {SolidLogic} from 'solid-logic';
+import { NamedNode } from 'rdflib'
+import { SolidLogic, LiveStore } from 'solid-logic';
 
 declare const list: Array<PaneDefinition>
 declare const paneForIcon: { [key: string]: PaneDefinition }
@@ -18,14 +18,6 @@ declare function register (
 ): void
 
 declare function byName (name: string): PaneDefinition | null
-
-export class ConnectedStore extends Store {
-  public fetcher: Fetcher
-}
-
-export class LiveStore extends ConnectedStore {
-  public updater: UpdateManager
-}
 
 /**
  * All of the knowledge that a user accumulates throughout the current session

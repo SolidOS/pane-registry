@@ -55,18 +55,4 @@ paneRegistry.byName = function (name) {
   return null
 }
 
-paneRegistry.ConnectedStore = class ConnectedStore extends $rdf.Store {
-  constructor (features) {
-    super(features)
-    this.fetcher = $rdf.fetcher(this, {})
-  }
-}
-
-paneRegistry.LiveStore = class LiveStore extends $rdf.Store {
-  constructor (features) {
-    super(features)
-    this.updater = new $rdf.UpdateManager(this)
-  }
-}
-
 // ENDS
