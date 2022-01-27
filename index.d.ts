@@ -1,7 +1,7 @@
 // This is manually built for now
 
-import { NamedNode } from 'rdflib'
-import { SolidLogic, LiveStore } from 'solid-logic';
+import { LiveStore, NamedNode } from 'rdflib';
+import { SolidLogic } from 'solid-logic';
 
 declare const list: Array<PaneDefinition>
 declare const paneForIcon: { [key: string]: PaneDefinition }

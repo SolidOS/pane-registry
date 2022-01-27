@@ -13,8 +13,6 @@
 // create the unique UI module on which to attach paneRegistry (no, don't attach as UI dot paneRegistry any more)
 // var UI = require('solid-ui') // Note we will add the paneRegistry register to this.
 
-const $rdf = require('rdflib')
-
 const paneRegistry = (module.exports = {})
 
 paneRegistry.list = []
