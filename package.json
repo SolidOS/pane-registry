@@ -8,7 +8,7 @@
     "build": "echo nothing to build",
     "lint": "eslint 'paneRegistry.js'",
     "lint-fix": "eslint 'paneRegistry.js' --fix",
-    "test": "npm run lint",
+    "test": "standard && npm run lint",
     "prepublishOnly": "npm test",
     "postversion": "git push origin main --follow-tags"
   },
@@ -37,11 +37,11 @@
   },
   "homepage": "https://github.com/solid/chat-pane",
   "dependencies": {
-    "rdflib": "^2.2.17",
+    "rdflib": "^2.2.18",
     "solid-logic": "^1.3.14"
   },
   "devDependencies": {
-    "eslint": "^7.32.0",
+    "eslint": "^8.11.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.1.4",
     "standard": "^16.0.4"
