@@ -10,11 +10,12 @@
     "lint-fix": "eslint 'paneRegistry.js' --fix",
     "test": "standard && npm run lint",
     "prepublishOnly": "npm test",
-    "postversion": "git push origin main --follow-tags"
+    "postversion": "git push origin main --follow-tags",
+    "watch": "echo nothing to watch"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/solidos/issue-pane"
+    "url": "https://github.com/solidos/pane-registry"
   },
   "keywords": [
     "solid",
