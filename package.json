@@ -10,8 +10,7 @@
     "lint-fix": "eslint 'paneRegistry.js' --fix",
     "test": "standard && npm run lint",
     "prepublishOnly": "npm test",
-    "postversion": "git push origin main --follow-tags",
-    "watch": "echo nothing to watch"
+    "postversion": "git push origin main --follow-tags"
   },
   "repository": {
     "type": "git",
@@ -39,7 +38,7 @@
   "homepage": "https://github.com/solidos/chat-pane",
   "dependencies": {
     "rdflib": "^2.2.19",
-    "solid-logic": "^1.3.17"
+    "solid-logic": "1.3.17-ec29db42"
   },
   "devDependencies": {
     "eslint": "^8.13.0",
