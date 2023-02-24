@@ -36,9 +36,6 @@
     "url": "https://github.com/solidos/chat-pane/issues"
   },
   "homepage": "https://github.com/solidos/chat-pane",
-  "dependencies": {
-    "solid-logic": "^3.0.0"
-  },
   "devDependencies": {
     "eslint": "^8.34.0",
     "husky": "^8.0.3",
@@ -55,5 +52,8 @@
     "*.js": [
       "eslint"
     ]
+  },
+  "dependencies": {
+    "solid-logic": "^2.1.2-196a4167"
   }
 }
