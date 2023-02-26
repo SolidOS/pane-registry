@@ -54,6 +54,7 @@
     ]
   },
   "dependencies": {
-    "solid-logic": "^2.1.2-2631e954"
+    "rdflib": "^2.2.26-1",
+    "solid-logic": "^2.1.2-9f0e0997"
   }
 }
