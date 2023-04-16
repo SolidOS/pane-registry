@@ -37,13 +37,13 @@
   },
   "homepage": "https://github.com/solidos/chat-pane",
   "dependencies": {
-    "rdflib": "^2.2.30",
-    "solid-logic": "^3.0.2"
+    "rdflib": "^2.2.31-4e4dc84d",
+    "solid-logic": "^3.0.2-4e4bf4eb"
   },
   "devDependencies": {
-    "eslint": "^8.36.0",
+    "eslint": "^8.38.0",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.0",
+    "lint-staged": "^13.2.1",
     "standard": "^17.0.0"
   },
   "husky": {
