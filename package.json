@@ -41,7 +41,7 @@
     "solid-logic": "^3.0.6"
   },
   "devDependencies": {
-    "eslint": "^8.54.0",
+    "eslint": "^8.57.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.3.0",
     "standard": "^17.1.0"
