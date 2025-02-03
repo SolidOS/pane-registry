@@ -43,7 +43,7 @@
   "devDependencies": {
     "eslint": "^8.57.0",
     "husky": "^8.0.3",
-    "lint-staged": "^13.3.0",
+    "lint-staged": "^15.4.3",
     "standard": "^17.1.0"
   },
   "husky": {
