@@ -1,3 +1,6 @@
+declare module 'rdflib';
+declare module 'solid-logic';
+
 import type { LiveStore, NamedNode } from 'rdflib';
 import type { SolidLogic } from 'solid-logic';
 export interface DataBrowserSession {
@@ -6,8 +9,8 @@ export interface DataBrowserSession {
     logic: SolidLogic;
 }
 export interface DataBrowserContext {
-    dom: HTMLDocument;
-    getOutliner: (dom: HTMLDocument) => unknown;
+    dom: Document|HTMLDocument;
+    getOutliner: (dom: Document|HTMLDocument) => unknown;
     session: DataBrowserSession;
 }
 export interface PaneDefinition {
