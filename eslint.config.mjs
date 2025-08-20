@@ -2,7 +2,11 @@ import { defineConfig } from 'eslint/config'
 import globals from 'globals'
 import neostandard from 'neostandard'
 
-export default defineConfig([
+import globals from 'globals'
+import neostandard from 'neostandard'
+
+
+export default [
   ...neostandard(),
   {
     languageOptions: {
