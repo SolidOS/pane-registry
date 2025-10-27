@@ -2,14 +2,20 @@
   "name": "pane-registry",
   "version": "2.5.1",
   "description": "Solid-compatible Panes: Pane Registry",
-  "main": "./paneRegistry.js",
-  "types": "./index.d.ts",
+  "main": "src/paneRegistry.js",
+  "types": "src/index.d.ts",
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "echo nothing to build",
-    "lint": "eslint 'paneRegistry.js'",
-    "lint-fix": "eslint 'paneRegistry.js' --fix",
+    "lint": "eslint",
+    "lint-fix": "eslint --fix",
     "test": "npm run lint",
     "prepublishOnly": "npm test",
+    "preversion": "npm run lint && npm run test",
     "postversion": "git push origin main --follow-tags"
   },
   "repository": {
