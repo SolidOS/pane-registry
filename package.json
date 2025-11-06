@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/solidos/pane-registry"
+    "url": "git+https://github.com/solidos/pane-registry.git"
   },
   "keywords": [
     "solid",
@@ -42,25 +42,12 @@
     "url": "https://github.com/solidos/chat-pane/issues"
   },
   "homepage": "https://github.com/solidos/chat-pane",
-  "dependencies": {
+  "peerDependencies": {
     "rdflib": "^2.2.37",
     "solid-logic": "^3.1.1-da65b2c"
   },
   "devDependencies": {
     "eslint": "^9.32.0",
-    "husky": "^9.1.7",
-    "lint-staged": "^16.1.2",
     "neostandard": "^0.12.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "npm test"
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "eslint"
-    ]
   }
 }
