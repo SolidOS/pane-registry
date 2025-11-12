@@ -13,9 +13,11 @@
     "build": "echo nothing to build",
     "lint": "eslint",
     "lint-fix": "eslint --fix",
-    "test": "npm run lint",
-    "prepublishOnly": "npm test",
-    "preversion": "npm run lint && npm run test",
+    "test": "jest",
+    "test:lint": "npm run lint",
+    "test:watch": "jest --watch",
+    "prepublishOnly": "npm run test:lint && npm test",
+    "preversion": "npm run test:lint && npm run test",
     "postversion": "git push origin main --follow-tags"
   },
   "repository": {
