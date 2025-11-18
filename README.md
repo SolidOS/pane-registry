@@ -43,6 +43,7 @@ The tests provide 100% code coverage for all functionality:
 - Console output is mocked to avoid noise during testing
 - State is reset between tests for isolation
 
+
 ## Coverage Report
 
 After running tests, view the coverage report:
