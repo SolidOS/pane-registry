@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/solidos/pane-registry.git"
+    "url": "git+https://github.com/SolidOS/pane-registry.git"
   },
   "keywords": [
     "solid",
