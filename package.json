@@ -49,11 +49,11 @@
     "solid-logic": "^4.0.0"
   },
   "devDependencies": {
-    "eslint": "^9.32.0",
-    "globals": "^17.0.0",
+    "eslint": "^9.39.2",
+    "globals": "^17.1.0",
     "jest": "^30.2.0",
     "neostandard": "^0.12.2",
-    "rdflib": "^2.3.0",
-    "solid-logic": "^4.0.0"
+    "rdflib": "^2.3.5",
+    "solid-logic": "^4.0.2"
   }
 }
