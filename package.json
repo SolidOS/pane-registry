@@ -52,6 +52,6 @@
     "eslint": "^9.39.2",
     "globals": "^17.1.0",
     "jest": "^30.2.0",
-    "neostandard": "^0.12.2"
+    "neostandard": "^0.13.0"
   }
 }
