@@ -45,8 +45,8 @@
   },
   "homepage": "https://github.com/solidos/chat-pane",
   "peerDependencies": {
-    "rdflib": "^2.3.5",
-    "solid-logic": "^4.0.2"
+    "rdflib": "^2.3.6",
+    "solid-logic": "^4.0.6"
   },
   "devDependencies": {
     "eslint": "^9.39.2",
