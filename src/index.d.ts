@@ -1,7 +1,5 @@
-// This is manually built for now
-
-import { LiveStore, NamedNode } from 'rdflib';
-import { SolidLogic } from 'solid-logic';
+import { LiveStore, NamedNode } from 'rdflib'
+import { SolidLogic } from 'solid-logic'
 
 declare const list: Array<PaneDefinition>
 declare const paneForIcon: { [key: string]: PaneDefinition }
@@ -28,13 +26,27 @@ export type DataBrowserSession = {
   logic: SolidLogic
 }
 
+export type LayoutMode = 'desktop' | 'mobile'
+export type LayoutPreference = LayoutMode | 'auto'
+export type ThemeMode = 'light' | 'dark'
+export type InputMode = 'touch' | 'pointer'
+
+export interface RenderEnvironment {
+  layout: LayoutMode
+  layoutPreference: LayoutPreference
+  inputMode: InputMode
+  theme: ThemeMode
+  viewport: { width: number; height: number }
+}
+
 /**
  * The current context that a view is rendered into
  */
 export type DataBrowserContext = {
   dom: HTMLDocument
   getOutliner: (dom: HTMLDocument) => unknown // @@ TODO Remove the use of getOutliner - only here as an interim until we have better solution
-  session: DataBrowserSession
+  session: DataBrowserSession,
+  environment?: RenderEnvironment
 }
 
 /**
