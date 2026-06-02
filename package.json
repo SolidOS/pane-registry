@@ -49,7 +49,7 @@
     "solid-logic": "^4.0.7"
   },
   "devDependencies": {
-    "eslint": "^9.39.4",
+    "eslint": "^10.4.1",
     "globals": "^17.6.0",
     "jest": "^30.4.2",
     "neostandard": "^0.13.0"
