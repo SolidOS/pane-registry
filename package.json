@@ -53,5 +53,9 @@
     "globals": "^17.6.0",
     "jest": "^30.4.2",
     "neostandard": "^0.13.0"
-  }
+  },
+  "solidosDependencies": [
+    "rdflib",
+    "solid-logic"
+  ]
 }
