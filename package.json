@@ -1,6 +1,6 @@
 {
   "name": "pane-registry",
-  "version": "3.1.2-test.0",
+  "version": "3.1.2-0",
   "description": "Solid-compatible Panes: Pane Registry",
   "main": "src/paneRegistry.js",
   "types": "src/index.d.ts",
@@ -45,13 +45,17 @@
   },
   "homepage": "https://github.com/solidos/chat-pane",
   "peerDependencies": {
-    "rdflib": "^2.3.7",
-    "solid-logic": "^4.0.8-test.0"
+    "rdflib": "2.3.9",
+    "solid-logic": "4.0.8-0"
   },
   "devDependencies": {
     "eslint": "^9.39.4",
     "globals": "^17.6.0",
     "jest": "^30.4.2",
     "neostandard": "^0.13.0"
-  }
+  },
+  "solidosDependencies": [
+    "rdflib",
+    "solid-logic"
+  ]
 }
