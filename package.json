@@ -52,5 +52,9 @@
   "solidosDependencies": [
     "rdflib",
     "solid-logic"
-  ]
+  ],
+  "dependencies": {
+    "rdflib": "2.4.0",
+    "solid-logic": "4.0.8-1"
+  }
 }
