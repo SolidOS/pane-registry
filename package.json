@@ -17,8 +17,7 @@
     "test-coverage": "jest --coverage",
     "test-watch": "jest --watch",
     "prepublishOnly": "npm run lint && npm test",
-    "preversion": "npm run lint && npm run test",
-    "postversion": "git push origin main --follow-tags"
+    "preversion": "npm run lint && npm run test"
   },
   "repository": {
     "type": "git",
@@ -44,10 +43,6 @@
     "url": "https://github.com/solidos/chat-pane/issues"
   },
   "homepage": "https://github.com/solidos/chat-pane",
-  "peerDependencies": {
-    "rdflib": "2.3.9",
-    "solid-logic": "4.0.8-0"
-  },
   "devDependencies": {
     "eslint": "^9.39.4",
     "globals": "^17.6.0",
