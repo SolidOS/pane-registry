@@ -55,6 +55,6 @@
   ],
   "dependencies": {
     "rdflib": "2.4.0",
-    "solid-logic": "^5.0.0"
+    "solid-logic": "5.0.0"
   }
 }
