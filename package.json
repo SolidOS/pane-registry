@@ -1,6 +1,6 @@
 {
   "name": "pane-registry",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "Solid-compatible Panes: Pane Registry",
   "main": "src/paneRegistry.js",
   "types": "src/index.d.ts",
@@ -40,9 +40,13 @@
   "author": "Tim Berners-Lee <timbl@mit.edu>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/solidos/chat-pane/issues"
+    "url": "https://github.com/solidos/pane-registry/issues"
   },
-  "homepage": "https://github.com/solidos/chat-pane",
+  "homepage": "https://github.com/solidos/pane-registry",
+  "dependencies": {
+    "rdflib": "2.4.1",
+    "solid-logic": "6.0.0-2"
+  },
   "devDependencies": {
     "eslint": "^9.39.4",
     "globals": "^17.6.0",
@@ -52,9 +56,5 @@
   "solidosDependencies": [
     "rdflib",
     "solid-logic"
-  ],
-  "dependencies": {
-    "rdflib": "2.4.0",
-    "solid-logic": "5.0.0"
-  }
+  ]
 }
