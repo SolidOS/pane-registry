@@ -46,7 +46,7 @@
   "homepage": "https://github.com/solidos/pane-registry",
   "dependencies": {
     "rdflib": "2.4.1",
-    "solid-logic": "^6.0.0"
+    "solid-logic": "6.0.0-2"
   },
   "devDependencies": {
     "eslint": "^9.39.4",
