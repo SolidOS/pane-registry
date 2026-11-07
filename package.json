@@ -1,6 +1,6 @@
 {
   "name": "pane-registry",
-  "version": "5.0.2-2",
+  "version": "5.0.2-3",
   "description": "Solid-compatible Panes: Pane Registry",
   "main": "src/paneRegistry.js",
   "types": "src/index.d.ts",
@@ -45,7 +45,7 @@
   "homepage": "https://github.com/solidos/pane-registry",
   "dependencies": {
     "rdflib": "2.4.1",
-    "solid-logic": "6.0.1-5"
+    "solid-logic": "6.0.1-6"
   },
   "devDependencies": {
     "eslint": "^9.39.4",
